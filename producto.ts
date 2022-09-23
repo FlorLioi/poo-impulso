@@ -27,5 +27,9 @@ export default class Producto{
         this.imagen = imagen;
     }
 
+    public imprimir() :string{
+        return `Producto: ${this.getTitulo()}, precio: $${this.getPrecio()}, imagen: ${this.getImagen()}}`;
+    }
+
 
 }

@@ -6,8 +6,8 @@ export default class ValoracionTatuajes{
     private tatuaje:Tatuaje;
     private valoracion:number;
 
-    constructor(){
-        
+    constructor(valoracion:number){
+        this.valoracion=valoracion;
     }
 
     public getValoracion(): number {
@@ -17,5 +17,12 @@ export default class ValoracionTatuajes{
     public setValoracion(valoracion: number) {
         this.valoracion = valoracion;
     }
+
+    public valorarTatuaje(usuario:Usuario, tatuaje:Tatuaje):void{
+        if(usuario && tatuaje){
+            this.valoracion +=1;
+        }
+    }
+    
 
 }

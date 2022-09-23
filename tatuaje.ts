@@ -33,4 +33,8 @@ export default class Tatuaje{
         this.tiempo = tiempo;
     }
 
+    public imprimir() :string{
+        return `Aire: ${this.getImagen()}, precio: $${this.getPrecio()}, tiempo: ${this.getTiempo()}}`;
+    }
+
 }
