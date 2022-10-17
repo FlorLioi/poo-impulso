@@ -8,7 +8,9 @@ export default class Tatuado{
     private hora:string;
     private lugar:string;
 
-    constructor(fecha:string, hora:string, lugar:string){
+    constructor(fecha:string, hora:string, lugar:string, usuario:Usuario, tatuaje:Tatuaje){
+        this.usuario=usuario;
+        this.tatuaje=tatuaje;
         this.fecha=fecha;
         this.hora=hora;
         this.lugar=lugar;

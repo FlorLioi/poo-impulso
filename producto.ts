@@ -3,6 +3,12 @@ export default class Producto{
     private precio:number;
     private imagen:string;
 
+    constructor(titulo:string, precio:number, imagen:string){
+        this.titulo=titulo;
+        this.precio=precio;
+        this.imagen=imagen;
+    }
+
     public getTitulo(): string{
         return this.titulo;
     }

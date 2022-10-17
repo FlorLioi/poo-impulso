@@ -5,7 +5,8 @@ export default class Carrito{
     private usuario:Usuario;
     private productos:Producto[];
 
-    constructor(){
+    constructor(usuario:Usuario){
+        this.usuario=usuario;
         this.productos=[];
     }
 
@@ -43,7 +44,7 @@ export default class Carrito{
                 throw new Error(`No se recibio un producto valido`);
             }
         }catch (error){
-            console.log(`Error en la actualizacion: ${error.message}`);
+            console.log(`Error en actualizacion: ${error.message}`);
         }
     }
 

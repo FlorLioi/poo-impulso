@@ -6,7 +6,9 @@ export default class ValoracionTatuajes{
     private tatuaje:Tatuaje;
     private valoracion:number;
 
-    constructor(valoracion:number){
+    constructor(valoracion:number, usuario:Usuario, tatuaje:Tatuaje){
+        this.usuario=usuario;
+        this.tatuaje=tatuaje;
         this.valoracion=valoracion;
     }
 
